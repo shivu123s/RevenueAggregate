@@ -1,0 +1,118 @@
+.App {
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(45px);
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 6px;
+  box-shadow: 0px 4px 12px rgb(146, 142, 142);
+  overflow-y: auto;
+  max-height: 95vh;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+.date-display {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 4px black;
+}
+
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6090b1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #080808; /* Color of the scrollbar track */
+  border-radius: 4px; /* Rounded corners for the scrollbar track */
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.app-header h1 {
+  color: #2c3e50;
+  font-size: 3rem;
+}
+
+.app-footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar label {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #bdc3c7;
+  font-size: 1rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.product-table th, .product-table td {
+  border-bottom: 1px solid #ecf0f1;
+  padding: 12px;
+  text-align: left;
+  color: #2c3e50;
+}
+
+.product-table th {
+  background-color: #c4c497;
+  color: #ecf0f1;
+  font-weight: bold;
+}
+
+.product-table tr:nth-child(even) {
+  background-color: #b9d9d3;
+}
+
+.product-table tr:hover {
+  background-color: #beb4b4;
+}
+
+.total-revenue {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: right;
+  color: #2c3e50;
+}
